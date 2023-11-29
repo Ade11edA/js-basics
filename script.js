@@ -62,11 +62,11 @@ function checkAge(myAge){
     if (myAge < license && myAge >= jrop ) {
         console.log("you can have a JrOp License"); 
     }
-    if (myAge>= license) {
+    if (myAge>= license && myAge < rental) {
         console.log("you can have a regular license");
     }
     if (myAge>= rental) {
-        console.log("you can rent a car");
+        console.log("you can rent a car and have a regular license");
     }
     if (myAge< jrop){
         console.log("you're too young to drive");
